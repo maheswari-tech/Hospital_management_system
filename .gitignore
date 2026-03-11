@@ -1,0 +1,16 @@
+# Node
+node_modules/
+frontend/node_modules/
+
+# React
+frontend/build/
+
+# Java
+target/
+*.class
+
+# Logs
+*.log
+
+# OS
+.DS_Store
