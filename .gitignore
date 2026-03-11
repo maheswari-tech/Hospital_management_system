@@ -7,7 +7,7 @@ frontend/build/
 
 # Java
 target/
-*.class
+*.class add
 
 # Logs
 *.log

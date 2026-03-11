@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏥 MediSchedule — Hospital Appointment & Doctor Scheduling System
 
 > Problem Statement 7 | React + Spring Boot + MySQL (XAMPP)
@@ -203,3 +204,6 @@ The app will open at **http://localhost:3000**
 - [x] React frontend with all 3 roles
 - [x] JWT authentication
 - [x] MySQL (XAMPP) backend
+=======
+# Hospital_MS
+>>>>>>> f970d8f3b11c9be365c7b3e9390709f956393ac9
