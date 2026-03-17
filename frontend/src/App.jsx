@@ -6,8 +6,8 @@ import { useState, useEffect, createContext, useContext } from "react";
 const AuthContext = createContext(null);
 const useAuth = () => useContext(AuthContext);
 
-const API = "https://hospital-management-system-ohh9.onrender.com/";
-
+const API = "http://localhost:8081/api";
+// const API = "https://hospital-management-system-ohh9.onrender.com/";
 const apiFetch = async (url, options = {}) => {
   const token = localStorage.getItem("token");
   const res = await fetch(`${API}${url}`, {
@@ -18,11 +18,21 @@ const apiFetch = async (url, options = {}) => {
       ...options.headers,
     },
   });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.message || "Request failed");
+
+  let data;
+  try {
+    data = await res.json();
+  } catch {
+    data = null;
+  }
+
+  if (!res.ok) {
+    // ✅ This correctly pulls the message from your backend response
+    throw new Error(data?.message || `Request failed with ${res.status}`);
+  }
+
   return data;
 };
-
 // ============================================================
 // ICONS (inline SVGs)
 // ============================================================
@@ -685,23 +695,49 @@ function ManageSlots({ user }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  const load = () => apiFetch(`/doctors/${user.userId}/slots`).then(setSlots).catch(console.error).finally(() => setLoading(false));
-  useEffect(load, []);
+  // ✅ Fix: use user.id not user.userId
+  const doctorId = user.id || user.userId;
+
+  const load = () => {
+    setLoading(true);
+    apiFetch(`/doctors/${doctorId}/slots`)
+      .then(setSlots)
+      .catch(console.error)
+      .finally(() => setLoading(false));
+  };
+
+  useEffect(() => {
+    load();
+  }, []); // ✅ No return value = no "destroy is not a function"
 
   const add = async () => {
+    if (!form.date || !form.startTime || !form.endTime) {
+      setError("Please fill all fields"); return;
+    }
     setError(""); setAdding(true);
     try {
       await apiFetch("/doctors/slots", { method: "POST", body: JSON.stringify(form) });
-      setSuccess("Slot added!"); setForm({ date: "", startTime: "", endTime: "" });
-      load(); setTimeout(() => setSuccess(""), 2000);
-    } catch (e) { setError(e.message); } finally { setAdding(false); }
+      setSuccess("Slot added!"); 
+      setForm({ date: "", startTime: "", endTime: "" });
+      load(); 
+      setTimeout(() => setSuccess(""), 2000);
+    } catch (e) { 
+      setError(e.message); 
+    } finally { 
+      setAdding(false); 
+    }
   };
 
   const del = async (id) => {
-    if (!confirm("Remove this slot?")) return;
-    await apiFetch(`/doctors/slots/${id}`, { method: "DELETE" });
-    load();
+    if (!window.confirm("Remove this slot?")) return;
+    try {
+      await apiFetch(`/doctors/slots/${id}`, { method: "DELETE" });
+      load();
+    } catch(e) {
+      alert(e.message);
+    }
   };
+
 
   return (
     <>
