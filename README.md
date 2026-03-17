@@ -3,7 +3,34 @@
 VERCEL FOR FRONTEND: https://hospital-management-system-wv3g-bmnrny2s1.vercel.app/
 BACKEND ON RENDER : https://hospital-management-system-ohh9.onrender.com
 
-> Problem Statement 7 | React + Spring Boot + MySQL (XAMPP)
+ React + Spring Boot + MySQL (XAMPP)
+
+Project view:
+Admin:
+<img width="1893" height="911" alt="image" src="https://github.com/user-attachments/assets/b43250b3-cb0c-4c95-ae15-d3e8bc1b8f10" />
+
+
+<img width="1906" height="787" alt="image" src="https://github.com/user-attachments/assets/ba95313f-63c7-412d-bfe2-4d1956d2657f" />
+
+Doctor:
+
+<img width="1867" height="888" alt="image" src="https://github.com/user-attachments/assets/2be357d0-7aad-42d4-a09b-200282e7eac9" />
+
+<img width="1867" height="888" alt="image" src="https://github.com/user-attachments/assets/b5d7a990-d241-4faf-91e4-60afa3228afc" />
+
+Patient:
+
+<img width="1443" height="638" alt="image" src="https://github.com/user-attachments/assets/c865e60e-eee1-4683-b08e-6dfb2001608b" />
+
+
+
+
+
+
+
+
+
+
 
 ---
 
