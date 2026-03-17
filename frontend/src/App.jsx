@@ -6,7 +6,7 @@ import { useState, useEffect, createContext, useContext } from "react";
 const AuthContext = createContext(null);
 const useAuth = () => useContext(AuthContext);
 
-const API = "http://localhost:8081/api";
+const API = process.env.REACT_APP_API_URL || "http://localhost:8081/api";
 // const API = "https://hospital-management-system-ohh9.onrender.com/";
 const apiFetch = async (url, options = {}) => {
   const token = localStorage.getItem("token");
