@@ -1,5 +1,7 @@
 <<<<<<< HEAD
 # 🏥 MediSchedule — Hospital Appointment & Doctor Scheduling System
+VERCEL FOR FRONTEND: https://hospital-management-system-wv3g-bmnrny2s1.vercel.app/
+BACKEND ON RENDER : https://hospital-management-system-ohh9.onrender.com
 
 > Problem Statement 7 | React + Spring Boot + MySQL (XAMPP)
 
