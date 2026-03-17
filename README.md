@@ -14,7 +14,8 @@ Doctor:
 
 <img width="1906" height="787" alt="image" src="https://github.com/user-attachments/assets/ba95313f-63c7-412d-bfe2-4d1956d2657f" />
 
-<img width="1867" height="888" alt="image" src="https://github.com/user-attachments/assets/2be357d0-7aad-42d4-a09b-200282e7eac9" />
+<img width="1880" height="833" alt="image" src="https://github.com/user-attachments/assets/90502c67-b03c-4710-a519-6ab8cf9e07b1" />
+
 
 
 Patient:
