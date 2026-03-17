@@ -10,24 +10,17 @@ Admin:
 <img width="1893" height="911" alt="image" src="https://github.com/user-attachments/assets/b43250b3-cb0c-4c95-ae15-d3e8bc1b8f10" />
 
 
-<img width="1906" height="787" alt="image" src="https://github.com/user-attachments/assets/ba95313f-63c7-412d-bfe2-4d1956d2657f" />
-
 Doctor:
+
+<img width="1906" height="787" alt="image" src="https://github.com/user-attachments/assets/ba95313f-63c7-412d-bfe2-4d1956d2657f" />
 
 <img width="1867" height="888" alt="image" src="https://github.com/user-attachments/assets/2be357d0-7aad-42d4-a09b-200282e7eac9" />
 
-<img width="1867" height="888" alt="image" src="https://github.com/user-attachments/assets/b5d7a990-d241-4faf-91e4-60afa3228afc" />
 
 Patient:
+<img width="1895" height="823" alt="image" src="https://github.com/user-attachments/assets/92b6b2c9-2f4e-4970-812d-c9d934771470" />
 
-<img width="1443" height="638" alt="image" src="https://github.com/user-attachments/assets/c865e60e-eee1-4683-b08e-6dfb2001608b" />
-
-
-
-
-
-
-
+<img width="1894" height="870" alt="image" src="https://github.com/user-attachments/assets/46fbf13a-9581-4daf-b802-32e08486ac0b" />
 
 
 
